@@ -1,7 +1,7 @@
 ---
 title: 运动的乐趣
 datetime: '2023-10-06 10:00:00'
-permalink: /posts/c10a87
+permalink: /posts/2843bf
 outline: deep
 order: 2
 category: 子文章

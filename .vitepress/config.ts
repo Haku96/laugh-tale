@@ -10,9 +10,7 @@ const { posts, rewrites } = await usePosts({
 })
 
 export default defineConfigWithTheme<ThemeConfig>({
-  title: '只抄',
-  titleTemplate: 'VitePress Theme Minimalism',
-  description: 'VitePress Theme Minimalism',
+  title: 'Haku96',
   rewrites,
   cleanUrls: true,
   ignoreDeadLinks: true,
@@ -21,7 +19,7 @@ export default defineConfigWithTheme<ThemeConfig>({
     page: {
       max: 5,
     },
-    logo: '/profile.png',
+    logo: '/profile.svg',
     outline: { level: 2 },
     nav: [
       { text: '首页', link: '/' },
@@ -48,7 +46,7 @@ export default defineConfigWithTheme<ThemeConfig>({
       message:
         'Theme by <a href="https://github.com/izhichao/vitepress-theme-minimalism" target="_blank">Minimalism</a>',
       copyright:
-        'Copyright © 2017-2024 <a href="https://github.com/izhichao" target="_blank">只抄</a>',
+        'Copyright © 2017-2024 <a href="https://github.com/Haku96" target="_blank">Haku96</a>',
     },
     search: { provider: 'local' },
   },

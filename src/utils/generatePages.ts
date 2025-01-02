@@ -32,7 +32,7 @@ layout: page
 ---
 layout: page
 ---
-<Home imgUrl="/profile.png" title="只抄" desc="Less is more." :links="[{ url: 'https://github.com/izhichao/vitepress-theme-minimalism', text: 'Github ->' }]" />
+<Home imgUrl="/profile.svg" title="Haku96" desc="Less is more." :links="[{ url: 'https://github.com/Haku96', text: 'Github ->' }]" />
     `.trim();
     await fs.writeFile(indexPath, page);
   }
