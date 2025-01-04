@@ -30,7 +30,7 @@
 </template>
 
 <script lang="ts" setup>
-import { ref } from 'vue'
+import { ref, onMounted } from 'vue'
 import { useData } from 'vitepress'
 import { useGroup } from '../composables/useGroup'
 import LinkList from '../components/LinkList.vue'
@@ -56,8 +56,13 @@ const titles = {
 const { theme } = useData()
 const { keys, data: posts } = useGroup(theme.value?.posts || [], props.type)
 
-const url = location.href.split('?')[0]
-const search = location.href.split('?')[1]
+let url = ''
+let search = ''
+onMounted(() => {
+  const url = location.href.split('?')[0]
+  const search = location.href.split('?')[1]
+})
+
 const params = new URLSearchParams(search)
 const select = ref(params.get(props.type) || '')
 const handleChange = (link: string) => {

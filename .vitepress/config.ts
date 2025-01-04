@@ -20,7 +20,9 @@ export default defineConfigWithTheme<ThemeConfig>({
       max: 5,
     },
     logo: '/profile.svg',
-    outline: { level: 2 },
+    outline: { level: 2, label: '页面导航' },
+    returnToTopLabel: '回到顶部',
+    sidebarMenuLabel: '菜单',
     nav: [
       { text: '首页', link: '/' },
       { text: '文档', link: '/docs/doc1' },
