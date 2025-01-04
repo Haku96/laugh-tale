@@ -39,7 +39,7 @@ export default defineConfigWithTheme<ThemeConfig>({
     socialLinks: [
       {
         icon: 'github',
-        link: 'https://github.com/izhichao/vitepress-theme-minimalism',
+        link: 'https://github.com/Haku96',
       },
     ],
     footer: {
