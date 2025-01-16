@@ -25,16 +25,42 @@ export default defineConfigWithTheme<ThemeConfig>({
     sidebarMenuLabel: '菜单',
     nav: [
       { text: '首页', link: '/' },
-      { text: '文档', link: '/docs/doc1' },
       { text: '分类', link: '/category' },
       { text: '标签', link: '/tags' },
       { text: '归档', link: '/archives' },
+      {
+        text: '文档',
+        items: [
+          { text: '基础知识', link: '/docs/基础知识/' },
+          { text: '工程实践', link: '/docs/工程实践/' },
+          { text: '进阶提升', link: '/docs/进阶提升/' },
+          { text: '收藏整理', link: '/docs/收藏整理/' },
+        ],
+      },
     ],
     sidebar: {
-      '/docs': [
+      '/docs/基础知识': [
         {
-          text: '如何使用电饭煲',
-          items: [{ text: '选择合适的电饭煲', link: '/docs/doc1' }],
+          text: '基础知识',
+          items: [{ text: 'Intro', link: '/docs/基础知识/' }],
+        },
+      ],
+      '/docs/工程实践': [
+        {
+          text: '工程实践',
+          items: [{ text: 'Intro', link: '/docs/工程实践/' }],
+        },
+      ],
+      '/docs/进阶提升': [
+        {
+          text: '进阶提升',
+          items: [{ text: 'Intro', link: '/docs/进阶提升/' }],
+        },
+      ],
+      '/docs/收藏整理': [
+        {
+          text: '收藏整理',
+          items: [{ text: 'Intro', link: '/docs/收藏整理/' }],
         },
       ],
     },
